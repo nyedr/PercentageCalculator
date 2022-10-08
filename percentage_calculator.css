@@ -1,0 +1,94 @@
+/* --- Head CSS Start --- */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #FA8B00;
+    ---green: rgba(35,134,54);
+    --lgreen: hsl(132, 59%, 39%);
+    --dgray: rgb(1,4,9);
+    --gray: rgb(13,17,23);
+    --lgray: rgb(177,186,196);
+    --white: rgb(201,209,217);
+    --dwhite: rgb(85,91,101);
+}
+
+html {
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* --- Head CSS End --- */
+
+/* --- Calculator CSS Start --- */
+
+body {
+    background-color: var(--dgray);
+}
+
+.container {
+    background-color: var(--gray);
+    border-radius: 10px;
+    width: clamp(30%, 800px, 65%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50vh - 14.5%);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 16px;
+    color: var(--white);
+    line-height: 35px;
+    display: inline-block;
+}
+
+button {
+    background-color: var(---green);
+    cursor: pointer;
+    padding: 6px 10px;
+    transition: 0.3s;
+    border-radius: 3px;
+    width: 105px;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--lgreen);
+}
+
+#resultOne, #resultTwo, #resultThree {
+    background-color: white;
+    margin-left: 15px;
+    width: minmax(80%, 150px);
+}
+
+input {
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px 10px;
+    border: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.calcOne, .calcTwo, .calcThree {
+    border: 2px solid rgba(177,186,196, 60%);
+    padding: 5px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hid {
+    visibility: hidden;
+}

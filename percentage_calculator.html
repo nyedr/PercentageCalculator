@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Percentage Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="percentage_calculator.css">
+        <link type="image/x-icon" rel="icon" href="https://www.reshot.com/preview-assets/icons/2ARZTMDXUW/percentage-2ARZTMDXUW.svg">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="calcOne">
+                <h2>What is <input id="percentOfNum" type="number"> % of <input id="numPercent" type="number">?</h2>
+                <div class="calcs">
+                    <button id="calculateOne">Calculate</button>
+                    <span><input id="resultOne" disabled> <span class="hid">%</span></span>
+                </div>
+            </div>
+            <div class="calcTwo">
+                <h2><input id="whatPercent" type="number"> Is what percentage of <input id="percentNum" type="number">?</h2>
+                <div class="calcs">
+                    <button id="calculateTwo">Calculate</button>
+                    <span><input id="resultTwo" disabled> <h2>%</h2></span>
+                </div>
+            </div>
+            <div class="calcThree">
+                <h2>What is the percentage increase/decrease<br> from <input id="from" type="number"> to <input id="to" type="number">?</h2>
+                <div class="calcs">
+                    <button id="calculateThree">Calculate</button>
+                    <span><input id="resultThree" disabled> <h2>%</h2></span>
+                </div>
+            </div>
+        </div>
+
+        <script src="percentage_calculator.js" async defer></script>
+    </body>
+</html>
